@@ -1,0 +1,26 @@
+name: Hola Mundo Workflow
+
+on: 
+  push:
+    branches: ["main"]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Paso 1: Saludar
+        run: |
+          echo "Hola desde GitHub Actions!"
+          
+      - name: Paso 2: Mostrar información del sistema
+        run: |
+          date
+          whoami
+          pwd
+          
+      - name: Paso 3: Variables de entorno de GitHub
+        run: |
+          echo "Repositorio: $GITHUB_REPOSITORY"
+          echo "Referencia: $GITHUB_REF"
+          echo "Actor: $GITHUB_ACTOR"
