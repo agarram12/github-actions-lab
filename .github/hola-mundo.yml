@@ -13,7 +13,7 @@ jobs:
         run: |
           echo "Hola desde GitHub Actions!"
           
-      - name: [Paso 2: Mostrar información del sistema]
+      - name: Paso 2: Mostrar información del sistema
         run: |
           date
           whoami
